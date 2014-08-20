@@ -1,0 +1,7 @@
+/*
+/*/
+!/src/
+!/composer.json
+!/README.md
+!/.gitignore
+.DS_Store
