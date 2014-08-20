@@ -1,5 +1,22 @@
 {
     "name": "jovial/who-charted",
+    "type": "symfony-bundle",
+    "description": "Jovial Chart Bundle. Extends the Oro BAP Chart Bundle to use the Chart.js lib.",
+    "keywords": ["Chart", "Chart.js", "Oro", "BAP"],
+    "homepage": "https://github.com/kriswallsmith/assetic",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sean Gofus",
+            "email": "sean.gofus@gmail.com",
+            "homepage": "http://www.seangofus.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.3.*",
+        "oro/chart-bundle": "dev-master"
+    },
     "autoload": {
         "psr-0" : {
             "Jov\\Bundle\\WhoChartedBundle" : "src"
