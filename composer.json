@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Jovial Chart Bundle. Extends the Oro BAP Chart Bundle to use the Chart.js lib.",
     "keywords": ["Chart", "Chart.js", "Oro", "BAP"],
-    "homepage": "https://github.com/kriswallsmith/assetic",
+    "homepage": "https://github.com/seangofus/who-charted",
     "license": "MIT",
     "authors": [
         {
