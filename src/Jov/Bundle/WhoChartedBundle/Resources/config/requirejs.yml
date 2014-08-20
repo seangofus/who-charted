@@ -1,0 +1,3 @@
+config:
+    paths:
+        'Chart': 'bundles/jovwhocharted/lib/chart/Chart.js'

@@ -1,0 +1,11 @@
+jov:
+    who_charted:
+        no_data: No data
+        bar_chart:
+            label: Bar Chart
+        line_chart:
+            label: Line Chart
+        radar_chart:
+            label: Radar Chart
+        polar_chart:
+            label: Polar Chart
