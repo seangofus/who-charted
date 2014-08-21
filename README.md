@@ -134,14 +134,14 @@ class DashboardController extends Controller
      */
     public function opportunityByStatusAction($widget)
     {
-        $items = $this->getDoctrine()
-            ->getRepository('OroCRMSalesBundle:Opportunity')
+        $data = $this->getDoctrine()
+            ->getRepository('JovTestBundle:TestEntity')
             ->getOpportunitiesByStatus($this->get('oro_security.acl_helper'));
 
         $widgetAttr = $this->get('oro_dashboard.widget_attributes')->getWidgetAttributesForTwig($widget);
 
         $widgetAttr['chartView'] = $this->get('who.charted')
-            ->setArrayData($items)
+            ->setArrayData($data)
             ->setOptions(
                 array(
                     'name' => 'bar_chart',
