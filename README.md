@@ -163,4 +163,5 @@ class DashboardController extends Controller
 
         return $widgetAttr;
     }
+}
 ```
