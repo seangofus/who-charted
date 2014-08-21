@@ -38,9 +38,9 @@ php app/console assets:install
 
 ## Getting Started
 
-Using Who Charted is not a whole lot different from using the native Oro Chart service. You will need to setup all the proper controllers, routes, and configurations to add a widget to the dashboard. Most that is out of the scope of this document but can be [found here](https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/DashboardBundle).
+Using Who Charted is not a whole lot different from using the native Oro Chart service. You will need to setup all the proper controllers, routes, and configurations to add a widget to the dashboard. Most of that is out of the scope of this document but can be [found here](https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/DashboardBundle).
 
-First gather your data
+First gather your data.
 
 ```php
 <?php
