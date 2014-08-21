@@ -3,62 +3,144 @@ jov_who_charted:
         label: jov.who_charted.bar_chart.label
         default_settings:
             colors:
-                - fillColor: 'rgba(4,77,41,.6)'
-                  strokeColor: 'rgba(0,38,28,.6)'
-                  highlightFill: 'rgba(69,191,85,.6)'
-                  highlightStroke: 'rgba(22,128,57,.6)'
+                - fillColor: "rgba(220,220,220,0.5)"
+                  strokeColor: "rgba(220,220,220,0.8)"
+                  highlightFill: "rgba(220,220,220,0.75)"
+                  highlightStroke: "rgba(220,220,220,1)"
+                - fillColor: "rgba(151,187,205,0.5)"
+                  strokeColor: "rgba(151,187,205,0.8)"
+                  highlightFill: "rgba(151,187,205,0.75)"
+                  highlightStroke: "rgba(151,187,205,1)"
+                - fillColor: "rgba(134,205,153,0.5)"
+                  strokeColor: "rgba(134,205,153,0.8)"
+                  highlightFill: "rgba(134,205,153,0.75)"
+                  highlightStroke: "rgba(134,205,153,1)"
+                - fillColor: "rgba(205,86,127,0.5)"
+                  strokeColor: "rgba(205,86,127,0.8)"
+                  highlightFill: "rgba(205,86,127,0.75)"
+                  highlightStroke: "rgba(205,86,127,1)"
+                - fillColor: "rgba(170,122,205,0.5)"
+                  strokeColor: "rgba(170,122,205,0.8)"
+                  highlightFill: "rgba(170,122,205,0.75)"
+                  highlightStroke: "rgba(170,122,205,1)"
         template: JovWhoChartedBundle:Chart:bar.html.twig
 
     line_chart:
         label: jov.who_charted.line_chart.label
         default_settings:
             colors:
-                - fillColor: "rgba(4,77,41,.6)"
-                  strokeColor: "rgba(0,38,28,.6)"
-                  pointColor: "rgba(22,128,57,.6)"
-                  pointStrokeColor: "rgba(0,38,28,.6)"
-                  pointHighlightFill: "rgba(69,191,85,.6)"
+                - fillColor: "rgba(220,220,220,0.2)"
+                  strokeColor: "rgba(220,220,220,1)"
+                  pointColor: "rgba(220,220,220,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
                   pointHighlightStroke: "rgba(220,220,220,1)"
+                - fillColor: "rgba(151,187,205,0.2)"
+                  strokeColor: "rgba(151,187,205,1)"
+                  pointColor: "rgba(151,187,205,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(151,187,205,1)"
+                - fillColor: "rgba(134,205,153,0.2)"
+                  strokeColor: "rgba(134,205,153,1)"
+                  pointColor: "rgba(134,205,153,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(134,205,153,1)"
+                - fillColor: "rgba(205,86,127,0.2)"
+                  strokeColor: "rgba(205,86,127,1)"
+                  pointColor: "rgba(205,86,127,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(205,86,127,1)"
+                - fillColor: "rgba(170,122,205,0.2)"
+                  strokeColor: "rgba(170,122,205,1)"
+                  pointColor: "rgba(170,122,205,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(170,122,205,1)"
         template: JovWhoChartedBundle:Chart:line.html.twig
 
     radar_chart:
         label: jov.who_charted.radar_chart.label
         default_settings:
             colors:
-                - fillColor: "rgba(4,77,41,.6)"
-                  strokeColor: "rgba(0,38,28,.6)"
-                  pointColor: "rgba(22,128,57,.6)"
-                  pointStrokeColor: "rgba(0,38,28,.6)"
-                  pointHighlightFill: "rgba(69,191,85,.6)"
+                - fillColor: "rgba(220,220,220,0.2)"
+                  strokeColor: "rgba(220,220,220,1)"
+                  pointColor: "rgba(220,220,220,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
                   pointHighlightStroke: "rgba(220,220,220,1)"
+                - fillColor: "rgba(151,187,205,0.2)"
+                  strokeColor: "rgba(151,187,205,1)"
+                  pointColor: "rgba(151,187,205,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(151,187,205,1)"
+                - fillColor: "rgba(134,205,153,0.2)"
+                  strokeColor: "rgba(134,205,153,1)"
+                  pointColor: "rgba(134,205,153,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(134,205,153,1)"
+                - fillColor: "rgba(205,86,127,0.2)"
+                  strokeColor: "rgba(205,86,127,1)"
+                  pointColor: "rgba(205,86,127,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(205,86,127,1)"
+                - fillColor: "rgba(170,122,205,0.2)"
+                  strokeColor: "rgba(170,122,205,1)"
+                  pointColor: "rgba(170,122,205,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(170,122,205,1)"
         template: JovWhoChartedBundle:Chart:radar.html.twig
 
     polar_chart:
         label: jov.who_charted.polar_chart.label
         default_settings:
             colors:
-                - color: "red"
-                  highlight: "blue"
-                - color: "purple"
-                  highlight: "lightblue"
+                - color: "rgba(220,220,220,0.5)"
+                  highlight: "rgba(220,220,220,0.75)"
+                - color: "rgba(151,187,205,0.5)"
+                  highlight: "rgba(151,187,205,0.75)"
+                - color: "rgba(134,205,153,0.5)"
+                  highlight: "rgba(134,205,153,0.75)"
+                - color: "rgba(205,86,127,0.5)"
+                  highlight: "rgba(205,86,127,0.75)"
+                - color: "rgba(170,122,205,0.5)"
+                  highlight: "rgba(170,122,205,0.75)"
         template: JovWhoChartedBundle:Chart:polar.html.twig
 
     pie_chart:
         label: jov.who_charted.polar_chart.label
         default_settings:
             colors:
-                - color: "red"
-                  highlight: "blue"
-                - color: "purple"
-                  highlight: "lightblue"
+                - color: "rgba(220,220,220,0.5)"
+                  highlight: "rgba(220,220,220,0.75)"
+                - color: "rgba(151,187,205,0.5)"
+                  highlight: "rgba(151,187,205,0.75)"
+                - color: "rgba(134,205,153,0.5)"
+                  highlight: "rgba(134,205,153,0.75)"
+                - color: "rgba(205,86,127,0.5)"
+                  highlight: "rgba(205,86,127,0.75)"
+                - color: "rgba(170,122,205,0.5)"
+                  highlight: "rgba(170,122,205,0.75)"
         template: JovWhoChartedBundle:Chart:pie.html.twig
 
     doughnut_chart:
         label: jov.who_charted.doughnut_chart.label
         default_settings:
             colors:
-                - color: "red"
-                  highlight: "blue"
-                - color: "purple"
-                  highlight: "lightblue"
+                - color: "rgba(220,220,220,0.5)"
+                  highlight: "rgba(220,220,220,0.75)"
+                - color: "rgba(151,187,205,0.5)"
+                  highlight: "rgba(151,187,205,0.75)"
+                - color: "rgba(134,205,153,0.5)"
+                  highlight: "rgba(134,205,153,0.75)"
+                - color: "rgba(205,86,127,0.5)"
+                  highlight: "rgba(205,86,127,0.75)"
+                - color: "rgba(170,122,205,0.5)"
+                  highlight: "rgba(170,122,205,0.75)"
         template: JovWhoChartedBundle:Chart:doughnut.html.twig
