@@ -45,8 +45,8 @@ First gather your data.
 ```php
 <?php
 $data = $this->getDoctrine()
-            ->getRepository('OroCRMSalesBundle:Opportunity')
-            ->getOpportunitiesByStatus($this->get('oro_security.acl_helper'));
+            ->getRepository('YourBundle:YourEntity')
+            ->getYourRepoMethod($this->get('oro_security.acl_helper'));
 ```
 The data must be in a certain format before it gets set on the widget attribute. For bar charts, line charts, and radar charts the data must look like this:
 
