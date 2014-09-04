@@ -45,9 +45,6 @@ class JovWhoChartedExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $chartConfigs);
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-        $loader->load('services.yml');
-        
         $container->getDefinition('who.charted.config_provider')->replaceArgument(0, $config);
     }
 }
