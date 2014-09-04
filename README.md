@@ -105,13 +105,14 @@ Inside the `settings` array you can override any of the chart type default value
 The `settings` array has one special sub-array that lets you specify colors for your chart. If no colors are specified then default colors will be used.
 
 ## Putting it together
+#### src/YourNamespace/Bundle/YourBundle/Controller/Dashboard/DashboardController.php
 
 Below is an example dashboard controller.
 
 ```php
 <?php
 
-namespace Jov\Bundle\TestBundle\Controller\Dashboard;
+namespace YourNamespace\Bundle\YourBundle\Controller\Dashboard;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Translation\TranslatorInterface;
@@ -126,13 +127,13 @@ class DashboardController extends Controller
 {
     /**
      * @Route(
-     *      "/opportunity_status/chart/{widget}",
-     *      name="jov_sales_dashboard_opportunity_by_status_chart",
+     *      "/your_route/chart/{widget}",
+     *      name="your_route_name",
      *      requirements={"widget"="[\w-]+"}
      * )
-     * @Template("JovTestBundle:Dashboard:opportunityByStatus.html.twig")
+     * @Template("YourNamespaceYourBundle:Dashboard:exampleChart.html.twig")
      */
-    public function opportunityByStatusAction($widget)
+    public function exampleChartAction($widget)
     {
         $data = $this->getDoctrine()
             ->getRepository('JovTestBundle:TestEntity')
@@ -165,3 +166,17 @@ class DashboardController extends Controller
     }
 }
 ```
+#### src/YourNamespace/Bundle/YourBundle/Resources/views/Dashboard/exampleChart.html.twig
+
+Below is an example view file.
+
+```twig
+{% extends 'OroDashboardBundle:Dashboard:chartWidget.html.twig' %}
+
+{% block content %}
+    {{ chartView.render()|raw }}
+{% endblock %}
+
+```
+## Credits
+[Sean Gofus](http://www.seangofus.com) | [@seangofus](http://www.twitter.com/seangofus)
