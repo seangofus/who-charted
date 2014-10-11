@@ -12,7 +12,13 @@ The Who Charted bundle is dependent on the Oro BAP, and as such has all the same
 
 ## Installation instructions
 
-Add the following line to your `composer.json` file:
+If your composer is up-to-date run the following command and proceed to party:
+
+```bash
+php /usr/local/bin/composer.phar require "jovial/who-charted"
+```
+
+Otherwise do it the old fashioned way and add the following line to your `composer.json` file:
 
 ```javascript
 {
@@ -22,11 +28,14 @@ Add the following line to your `composer.json` file:
     }
 }
 ```
+
 Now you are ready to update composer.
 
 ```bash
 php /usr/local/bin/composer.phar update
 ```
+___
+
 After composer finishes updating you need to clear your cache and install the assets.
 
 ```bash
