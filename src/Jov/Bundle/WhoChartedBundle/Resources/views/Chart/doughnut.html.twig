@@ -1,22 +1,3 @@
-{# Chart variables format:
-
-    "options":
-        "name": "chart_name",
-        "data_schema" => array(
-            "label" => array("field_name" => "name", "label" => "First Name", "type" => "string"),
-            "value" => array("field_name" => "salary", "label" => "Salary", "type" => "money"),
-        ),
-        "settings" => array(
-            "foo" => "bar"
-        ),
-    "config": { /** Chart config from in format of oro/chart.yml */ }
-    "data": [
-        {"label": "In progress", "value": 1000},
-        {"label": "Lost", "value": 500},
-        {"label": "Won", "value": 10000},
-    ]
-
-#}
 {% if data|length>0  %}
     {% set containerId = "chart-container-" ~ random() %}
     <div class="chart-container">
