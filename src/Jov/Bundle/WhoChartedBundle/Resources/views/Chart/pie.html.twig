@@ -32,8 +32,11 @@
 
                         var whoChartedChart = new Chart(ctx).Pie(data, options);
                         if (options.legend === true) {
+                            if ( $widgetContent.children('ul[class*="legend"]').length > 0 ) {
+                                $widgetContent.children('ul[class*="legend"]').remove();
+                            }
                             var legend = whoChartedChart.generateLegend();
-                            $widgetContent.prepend(legend);
+                            $widgetContent.children('.chart-container').append(legend);
                         }
                     };
 
