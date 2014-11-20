@@ -6,9 +6,8 @@ The Who Charted bundle extends the functionality of the Oro Chart bundle in orde
 
 The Who Charted bundle is dependent on the Oro BAP, and as such has all the same requirements as the Oro BAP. Those requirements can be [viewed here](http://www.orocrm.com/system-requirements).
 
-* PHP 5.4.9 or above
-* Symfony 2.3 or above
-* Oro BAP 1.4 or above
+* PHP 5.4.4 or above
+* Oro BAP 1.0 or above
 
 ## Installation instructions
 
