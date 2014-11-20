@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "oro/platform": "1.x-dev"
+        "oro/platform": "1.*"
     },
     "autoload": {
         "psr-0" : {
