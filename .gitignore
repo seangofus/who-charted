@@ -1,7 +1,58 @@
-/*
-/*/
-!/src/
-!/composer.json
-!/README.md
-!/.gitignore
+# IDE files
+/.settings
+/.buildpath
+/.project
+/.idea
+/.vagrant
+atlassian-ide-plugin.xml
+composer.phar
+/vendor
+build/
+/cov
 .DS_Store
+*~
+
+# Cache and logs (Symfony2)
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+
+# Parameters
+/app/config/parameters.yml
+/app/config/parameters_test.yml
+/app/config/parameters.ini
+
+# Managed by Composer
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/bin/*
+!bin/console
+!bin/symfony_requirements
+/vendor/
+.DS_Store
+*~
+.vagrant
+assets
+/app/SymfonyRequirements.php
+/components/
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+/web/uploads/users/*
+/web/css/
+/web/js/
+/web/assets/
+/web/media/cache/
+/web/build.js
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+# Composer PHAR
+/composer.phar
