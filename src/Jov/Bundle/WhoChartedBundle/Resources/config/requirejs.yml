@@ -1,3 +1,5 @@
 config:
     paths:
         'Chart': 'bundles/jovwhocharted/lib/chart/Chart.min.js'
+        'jovwhocharted/js/app/components/base-chart-component': 'bundles/jovwhocharted/js/app/components/base-chart-component.js'
+        'jovwhocharted/js/app/components/pie-chart-component': 'bundles/jovwhocharted/js/app/components/pie-chart-component.js'
