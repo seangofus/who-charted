@@ -2,7 +2,7 @@
 
 The Who Charted bundle extends the functionality of the Oro Chart bundle in order to use the Chart.js library. Out-of-the-box the Oro BAP Chart bundle uses the flotr2 library for charts. This bundle's goal is to add the Chart.js library as another option.
 
-## Requirement
+## Requirements
 
 The Who Charted bundle is dependent on the Oro BAP, and as such has all the same requirements as the Oro BAP. Those requirements can be [viewed here](http://www.orocrm.com/system-requirements).
 
