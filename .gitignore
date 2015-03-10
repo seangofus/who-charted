@@ -4,4 +4,8 @@
 !/composer.json
 !/README.md
 !/.gitignore
+/.settings
+/.buildpath
+/.project
+/.idea
 .DS_Store
