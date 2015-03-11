@@ -6,3 +6,4 @@ config:
         'jovwhocharted/js/app/components/bar-chart-component': 'bundles/jovwhocharted/js/app/components/bar-chart-component.js'
         'jovwhocharted/js/app/components/line-chart-component': 'bundles/jovwhocharted/js/app/components/line-chart-component.js'
         'jovwhocharted/js/app/components/radar-chart-component': 'bundles/jovwhocharted/js/app/components/radar-chart-component.js'
+        'jovwhocharted/js/app/components/polar-chart-component': 'bundles/jovwhocharted/js/app/components/polar-chart-component.js'
