@@ -9,7 +9,6 @@ services:
             - []
     who.charted:
         class: %who.charted.class%
-        scope: prototype
         arguments:
             - @who.charted.config_provider
             - @oro_chart.data_transformer.factory
