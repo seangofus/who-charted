@@ -21,16 +21,15 @@ define(function(require) {
             var $container = this.$container;
             var $chart = this.$chart;
             var $widgetContent = $container.parent();
-            var chartWidth = Math.round($widgetContent.width() * 0.9);
+            var chartWidth = $widgetContent.width();
 
-            if (chartWidth != $chart.width()) {
-                var width = chartWidth;
-                var height = Math.min(Math.round(chartWidth * 0.4), 350);
+            var width = chartWidth;
+            var height = Math.min(Math.round(chartWidth * 0.4), 350);
 
-                this.$chartCanvas.attr('width', width);
-                this.$chartCanvas.attr('height', height);
-                isChanged = true;
-            }
+            this.$chartCanvas.attr('width', width);
+            this.$chartCanvas.attr('height', height);
+            isChanged = true;
+
             return isChanged;
         },
 
