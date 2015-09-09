@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.4.4",
-        "oro/platform": "dev-maintain-ae"
+        "oro/platform": "dev-maintain-ae-1.7"
     },
     "autoload": {
         "psr-0" : {
