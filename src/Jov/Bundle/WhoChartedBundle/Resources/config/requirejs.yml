@@ -1,6 +1,7 @@
 config:
     paths:
         'Chart': 'bundles/jovwhocharted/lib/chart/Chart.min.js'
+        'StackedBar': 'bundles/jovwhocharted/lib/chart/Chart.StackedBar.js'
         'jovwhocharted/js/app/components/base-chart-component': 'bundles/jovwhocharted/js/app/components/base-chart-component.js'
         'jovwhocharted/js/app/components/pie-chart-component': 'bundles/jovwhocharted/js/app/components/pie-chart-component.js'
         'jovwhocharted/js/app/components/bar-chart-component': 'bundles/jovwhocharted/js/app/components/bar-chart-component.js'
@@ -8,4 +9,5 @@ config:
         'jovwhocharted/js/app/components/radar-chart-component': 'bundles/jovwhocharted/js/app/components/radar-chart-component.js'
         'jovwhocharted/js/app/components/polar-chart-component': 'bundles/jovwhocharted/js/app/components/polar-chart-component.js'
         'jovwhocharted/js/app/components/doughnut-chart-component': 'bundles/jovwhocharted/js/app/components/doughnut-chart-component.js'
+        'jovwhocharted/js/app/components/stacked-bar-chart-component': 'bundles/jovwhocharted/js/app/components/stacked-bar-chart-component.js'
 
