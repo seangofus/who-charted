@@ -1,0 +1,7 @@
+{% set params = {
+    data: data,
+    options: options
+} %}
+
+<div data-page-component-module="jovwhocharted/js/app/components/stacked-bar-chart-component"
+     data-page-component-options="{{ params|json_encode }}"></div>
