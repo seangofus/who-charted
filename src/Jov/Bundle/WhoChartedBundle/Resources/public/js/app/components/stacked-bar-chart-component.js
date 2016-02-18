@@ -3,7 +3,7 @@ define(function(require) {
 
     var BarChartComponent,
         Chart = require('Chart'),
-        StackedBar = require('StackedBar'),
+        StackedBar = require('bundles/jovwhocharted/lib/chart/Chart.StackedBar.js'),
         BaseChartComponent = require('jovwhocharted/js/app/components/base-chart-component'),
         _ = require('underscore');
 
