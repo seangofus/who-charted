@@ -11,21 +11,10 @@ The Who Charted bundle is dependent on the Oro BAP, and as such has all the same
 
 ## Installation instructions
 
-If your composer is up-to-date run the following command and proceed to party:
+Run the following command and proceed to party:
 
 ```bash
 php /usr/local/bin/composer.phar require "jovial/who-charted"
-```
-
-Otherwise do it the old fashioned way and add the following line to your `composer.json` file:
-
-```javascript
-{
-    "require": {
-        // Other requirements
-        "jovial/who-charted": "dev-master"
-    }
-}
 ```
 
 Now you are ready to update composer.
@@ -40,6 +29,7 @@ After composer finishes updating you need to clear your cache and install the as
 ```bash
 php app/console cache:clear
 ```
+
 ```bash
 php app/console assets:install
 ```
@@ -56,7 +46,7 @@ $data = $this->getDoctrine()
             ->getRepository('YourBundle:YourEntity')
             ->getYourRepoMethod($this->get('oro_security.acl_helper'));
 ```
-The data must be in a certain format before it gets set on the widget attribute. For bar charts, line charts, and radar charts the data must look like this:
+The data must be in a certain format before it gets set on the widget attribute. For bar charts, stacked bar charts, line charts, and radar charts the data must look like this:
 
 ```php
 <?php
@@ -83,7 +73,7 @@ Next you need to create a widget attribute.
 
 ```php
 <?php
-$widgetAttr = $this->get('oro_dashboard.widget_attributes')->getWidgetAttributesForTwig($widget);
+$widgetAttr = $this->get('oro_dashboard.widget_configs')->getWidgetAttributesForTwig($widget);
 ```
 
 Then you just call the Who Charted service and set the data and options and get the view.
@@ -106,7 +96,7 @@ $widgetAttr['chartView'] = $this->get('who.charted')
 
         return $widgetAttr;
 ```
-Inside the `setOptions()` method you need to pass it the name of the chart you want to use. Currently there are 6 types that are available: bar_chart, line_chart, radar_chart, polar_chart, pie_chart, and doughnut_chart. Next you can override any of the chart's default settings using the optional `settings` array.
+Inside the `setOptions()` method you need to pass it the name of the chart you want to use. Currently there are 7 types that are available: bar_chart, stacked_bar_chart, line_chart, radar_chart, polar_chart, pie_chart, and doughnut_chart. Next you can override any of the chart's default settings using the optional `settings` array.
 
 Inside the `settings` array you can override any of the chart type default values using the Chart.js keys and acceptable values. As an example of what defaults can be overridden, take a look at the Chart.js documentation for the bar chart ... http://www.chartjs.org/docs/#bar-chart-chart-options.
 
@@ -147,7 +137,7 @@ class DashboardController extends Controller
             ->getRepository('JovTestBundle:TestEntity')
             ->getOpportunitiesByStatus($this->get('oro_security.acl_helper'));
 
-        $widgetAttr = $this->get('oro_dashboard.widget_attributes')->getWidgetAttributesForTwig($widget);
+        $widgetAttr = $this->get('oro_dashboard.widget_configs')->getWidgetAttributesForTwig($widget);
 
         $widgetAttr['chartView'] = $this->get('who.charted')
             ->setArrayData($data)
