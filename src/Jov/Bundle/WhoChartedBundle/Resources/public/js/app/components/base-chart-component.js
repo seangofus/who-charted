@@ -108,7 +108,7 @@ define(function(require) {
         createLegend: function(chart) {
             if(typeof this.legend !== 'undefined') {
                 var legendMarkup = chart.generateLegend();
-                this.$container.append(legendMarkup);
+                this.$container.after(legendMarkup);
                 this.legendCreated = true;
             }
         }
