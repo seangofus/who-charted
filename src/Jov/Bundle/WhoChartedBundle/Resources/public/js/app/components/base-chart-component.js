@@ -5,7 +5,8 @@ define(function(require) {
         _ = require('underscore'),
         $ = require('jquery'),
         chartTemplate = require('text!jovwhocharted/js/templates/base-chart-template.html'),
-        BaseComponent = require('oroui/js/app/components/base/component');
+        BaseComponent = require('oroui/js/app/components/base/component'),
+        oroLocaleNumberFormat = require('orolocale/js/formatter/number');
 
     /**
      * @class orochart.app.components.BaseChartComponent
@@ -29,6 +30,12 @@ define(function(require) {
             if(this.options.settings.legend) {
                 this.legend = this.options.settings.legend;
                 this.legendCreated = null;
+            }
+
+            if (this.options.settings.tooltipCurrency) {
+                this.options.settings.tooltipTemplate = function(data) {
+                    return data.label + ':' + ' ' + oroLocaleNumberFormat.formatCurrency(data.value);
+                };
             }
 
             this.$el = $(options._sourceElement);
