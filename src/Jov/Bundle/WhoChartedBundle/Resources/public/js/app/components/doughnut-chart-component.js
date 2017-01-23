@@ -4,6 +4,7 @@ define(function(require) {
     var DoughnutChartComponent,
         Chart = require('Chart'),
         BaseChartComponent = require('jovwhocharted/js/app/components/base-chart-component'),
+        mediator = require('oroui/js/mediator'),
         _ = require('underscore');
 
     DoughnutChartComponent = BaseChartComponent.extend({
@@ -51,6 +52,7 @@ define(function(require) {
             if(typeof this.legend !== 'undefined' && this.legendCreated === null) {
                 DoughnutChartComponent.__super__.createLegend.call(this, this.whoChartedChart);
             }
+            mediator.trigger('who-charted-drawn');
         }
     });
 
